@@ -6,7 +6,7 @@ permissions:
   contents: read
   packages: write
 env:
-  VERSION: 54343aa685ae8f33159d2f485ec4a57bad5c574a
+  VERSION: ae027bb70e694e2d2c44569f398d6cbcee0389b1
 jobs:
   fabrication:
     runs-on: ubuntu-latest
@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/dmarienval-dot/mtma-caldiy:54343aa
+          tags: ghcr.io/dmarienval-dot/mtma-caldiy:ae027bb
           labels: org.opencontainers.image.source=https://github.com/dmarienval-dot/mtma-caldiy
           build-args: |
             NEXT_PUBLIC_WEBAPP_URL=https://rdv.montempsmonargent.fr
